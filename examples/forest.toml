@@ -1,0 +1,19 @@
+# Simple example illustrating how to write out the wire format for data
+# serialization as TOML.
+
+package = "github.com/thenorthnate/wire"
+
+[[message]]
+name = "Forest"
+
+[[message.field]]
+name = "name"
+type = "string"
+
+[[message.field]]
+name = "size"
+type = "uint32"
+
+[[message.field]]
+name = "trees"
+type = "[]Tree"
